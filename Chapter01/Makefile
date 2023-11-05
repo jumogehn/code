@@ -1,9 +1,13 @@
 
-CXXFLAGS=-I/opt/sdl2/include/SDL2 -D_REENTRANT
-LDFLAGS=-L/opt/sdl2/lib -Wl,-rpath,/opt/sdl2/lib -Wl,--enable-new-dtags -lSDL2
+#sdl2-config --cflags
+CXXFLAGS=-I/usr/include/SDL2 -D_REENTRANT
+
+#sdl2-config --libs
+LDFLAGS=-lSDL2
 
 all:
 	g++ -o game Game.cpp Main.cpp $(CXXFLAGS) $(LDFLAGS)
+
 clean:
-	rm -rf game
+	rm -rf game test
 

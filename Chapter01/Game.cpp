@@ -1,7 +1,7 @@
 // ----------------------------------------------------------------
 // From Game Programming in C++ by Sanjay Madhav
 // Copyright (C) 2017 Sanjay Madhav. All rights reserved.
-// 
+//
 // Released under the BSD License
 // See LICENSE in root directory for full details.
 // ----------------------------------------------------------------
@@ -195,8 +195,8 @@ void Game::GenerateOutput()
   // Set draw color to blue
   SDL_SetRenderDrawColor(
     mRenderer,
-    0,		// R
-    0,		// G 
+    0,	// R
+    0,	// G 
     255,	// B
     255		// A
     );
@@ -209,10 +209,10 @@ void Game::GenerateOutput()
 
   // Draw top wall
   SDL_Rect wall{
-    0,			// Top left x
-      0,			// Top left y
-      1024,		// Width
-      thickness	// Height
+    0,        // Top left x
+    0,        // Top left y
+    1024,     // Width
+    thickness // Height
   };
   SDL_RenderFillRect(mRenderer, &wall);
 
@@ -237,7 +237,7 @@ void Game::GenerateOutput()
   SDL_RenderFillRect(mRenderer, &paddle);
 
   // Draw ball
-  SDL_Rect ball{	
+  SDL_Rect ball{
     static_cast<int>(mBallPos.x - thickness/2),
       static_cast<int>(mBallPos.y - thickness/2),
       thickness,

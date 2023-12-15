@@ -9,5 +9,5 @@ all:
 	g++ -o game Game.cpp Main.cpp $(CXXFLAGS) $(LDFLAGS)
 
 clean:
-	rm -rf game test
+	rm -rf game
 

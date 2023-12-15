@@ -13,3 +13,6 @@ Chapter14/Assets/*.bin
 External/FMOD
 *.swp
 Chapter01/game
+cscope.files
+cscope.out
+tags

@@ -7,6 +7,7 @@
 // ----------------------------------------------------------------
 
 #pragma once
+#include <stdint.h>
 #include "Actor.h"
 class Ship : public Actor
 {
